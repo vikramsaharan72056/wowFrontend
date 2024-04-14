@@ -1,0 +1,39 @@
+.root-container {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "sidebar main main";
+  grid-template-rows: 6vh 1fr; 
+  grid-template-columns: 20vw auto;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden; 
+}
+
+.content-container {
+  width: 80%;
+  padding-left: 21%; 
+}
+
+.main-content {
+  padding: 2px;
+}
+
+.sidebar {
+  width: 20%;
+  z-index: 1;
+  position: relative; 
+}
+
+.header {
+  grid-area: header;
+  width: 100%;
+  z-index: 2;
+  position: relative; 
+}
+
+.main {
+  grid-area: main;
+  width: 100%;
+  overflow-y: auto;
+}
